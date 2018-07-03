@@ -2,10 +2,10 @@ var express = require('express')
 var app = express()
 
 app.use(require('connect-livereload')())
-app.use(express.static('demo05-fade in effect'))
+app.use(express.static('demo05-game start'))
 
 app.get('/', function(req, res) {
-  res.sendFile(__dirname + '/demo05-fade in effect/index.html')
+  res.sendFile(__dirname + '/demo05-game start/index.html')
 })
 
 app.listen(3000, function() {

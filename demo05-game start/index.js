@@ -31,6 +31,11 @@ function startGame() {
   for (var i = 0; i < 3; i++) {
     app.stage.removeChild(text[i])
   }
-  var bg1 = PIXI.Sprite.fromImage('./bg1.png')
-  app.stage.addChild(bg1)
+  var texture = PIXI.Texture.fromImage('./bg.png')
+  var tilingSprite = new PIXI.extras.TilingSprite(
+    texture,
+    app.screen.width,
+    app.screen.height
+  )
+  app.stage.addChild(tilingSprite)
 }
