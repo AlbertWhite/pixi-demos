@@ -1,6 +1,8 @@
-var app = new PIXI.Application(800, 600, { backgroundColor: 0x1099bb })
+//basic setting
+var app = new PIXI.Application(1000, 800, { backgroundColor: 0x1099bb })
 document.body.appendChild(app.view)
 
+console.log("app", app)
 // create a new Sprite from an image path
 var bunny = PIXI.Sprite.fromImage("labi.png")
 
