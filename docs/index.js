@@ -6,7 +6,7 @@ var PIXI_VARIABLES = {
   level: "small",
   language: "",
   TEXTS: [],
-  width: 9090
+  width: 9390
 }
 
 const BREAKPOINTS = [3690, 7670, 9010]
@@ -135,7 +135,7 @@ function InitApp(e) {
   //Initialize text and style
   var style = new PIXI.TextStyle({
     fontFamily: "Arial",
-    fontSize: 25,
+    fontSize: 20,
     fill: "#ffffff",
     wordWrap: true,
     wordWrapWidth: 440
@@ -212,9 +212,9 @@ function onAssetsLoaded() {
   if (PIXI_VARIABLES.level == "small") {
     PIXI_VARIABLES.animation.x = 10
   } else if (PIXI_VARIABLES.level == "medium") {
-    PIXI_VARIABLES.animation.x = BREAKPOINTS[0] + 120
+    PIXI_VARIABLES.animation.x = BREAKPOINTS[0] + 20
   } else if (PIXI_VARIABLES.level == "old") {
-    PIXI_VARIABLES.animation.x = BREAKPOINTS[1] + 120
+    PIXI_VARIABLES.animation.x = BREAKPOINTS[1] + 20
   }
 
   PIXI_VARIABLES.animation.y = PIXI_VARIABLES.app.screen.height - 500
