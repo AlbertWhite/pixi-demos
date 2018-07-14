@@ -212,9 +212,9 @@ function onAssetsLoaded() {
   if (PIXI_VARIABLES.level == "small") {
     PIXI_VARIABLES.animation.x = 10
   } else if (PIXI_VARIABLES.level == "medium") {
-    PIXI_VARIABLES.animation.x = BREAKPOINTS[0] + 120
+    PIXI_VARIABLES.animation.x = BREAKPOINTS[0] + 180
   } else if (PIXI_VARIABLES.level == "old") {
-    PIXI_VARIABLES.animation.x = BREAKPOINTS[1] + 120
+    PIXI_VARIABLES.animation.x = BREAKPOINTS[1] + 180
   }
 
   PIXI_VARIABLES.animation.y = PIXI_VARIABLES.app.screen.height - 500
