@@ -6,7 +6,7 @@ var PIXI_VARIABLES = {
   level: "small",
   language: "",
   TEXTS: [],
-  width: 9390
+  width: 9090
 }
 
 const BREAKPOINTS = [3690, 7670, 9010]
@@ -212,9 +212,9 @@ function onAssetsLoaded() {
   if (PIXI_VARIABLES.level == "small") {
     PIXI_VARIABLES.animation.x = 10
   } else if (PIXI_VARIABLES.level == "medium") {
-    PIXI_VARIABLES.animation.x = BREAKPOINTS[0] + 20
+    PIXI_VARIABLES.animation.x = BREAKPOINTS[0] + 120
   } else if (PIXI_VARIABLES.level == "old") {
-    PIXI_VARIABLES.animation.x = BREAKPOINTS[1] + 20
+    PIXI_VARIABLES.animation.x = BREAKPOINTS[1] + 120
   }
 
   PIXI_VARIABLES.animation.y = PIXI_VARIABLES.app.screen.height - 500
